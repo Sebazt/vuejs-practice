@@ -1,15 +1,16 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <counter title= "New door" :start="10" />
+  <counter title= "Out door" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import  counter from "./components/Counter.vue";
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    counter
   }
 }
 </script>
